@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ac8957;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: #050a12;
+  height: 5em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fef7ec;
+  font-size: 1.688em;
+   font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+
+}
+.navbar ul li{
+  list-style: none;
+}
+.sideBar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #050a12;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4em;
+
+}
+.close{
+  position: fixed;
+  top: .5em;
+  left: .5em;
+  font-size: 3.5em;
+  
+}
+.navbar img {
+  width: 10.313em;
+  height: 5em;
+  object-fit: cover;
+}
+.icons {
+  font-size: 3em;
+}
+.hero {
+  background: url(images/Barbershop.jpg);
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  animation: 12s ease-in-out infinite image;
+  z-index: -100;
+}
+@keyframes image {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+.hero .header {
+  position: absolute;
+  bottom: 16em;
+  text-align: center;
+  width: 100%;
+  color: #fef7ec;
+  font-size: 2.5em;
+  text-shadow: 5px 5px 8px #ac8957;
+  animation: 2s ease-out herotextanim;
+  font-family: "Joti One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@keyframes herotextanim {
+  0% {
+    bottom: 20em;
+  }
+  100% {
+    bottom: 16em;
+  }
+}
+.about {
+  background-color: #ac8957;
+}
+.aboutHeader {
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+  font-size: 1.563rem;
+  padding: 2.5em 1em 2.5em 1em;
+}
+.about img{
+  width: 398px; /* Set the width */
+  height: 381px; /* Set the height */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure block-level display */
+  max-width: 100%; /* Make the image responsive */
+
+}
+
+
+.aboutMore {
+  font-family: "Amiko", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 1em 0 1em;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 1em;
+}
+.gallary {
+  background-color: #c3b3a4;
+}
+.galleryHeader {
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+  font-size: 1.563rem;
+  padding: 2.5em 1em 2.5em 1em;
+}
+
+.gallaryImages img {
+   width: 398px; /* Set the width */
+  height: 227px; /* Set the height */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin: 0 auto 1.4em auto; /* Center the image */
+  display: block; /* Ensure block-level display */
+  max-width: 100%; /* Make the image responsive */
+}
+.services {
+  background-color: #ac8957;
+}
+.servicesHeader {
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+  font-size: 1.563rem;
+  padding: 2.5em 1em 2.5em 1em;
+}
+
+.serviceItems .item {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  margin: 0 1.4em 0 1.4em;
+}
+.serviceBound {
+  height: 0.25em;
+  margin: 0 1em 0 1em;
+  background-color: #c3b3a4;
+  margin-top: 0.4em;
+  border-radius: 2em;
+}
+.item p {
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+  font-size: 1.12rem;
+  padding-top: 2.5em;
+}
+.workHour {
+  width: 253px;
+  height: 129px;
+  background-color: #c3b3a4;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.813em;
+  border-radius: 0.313em;
+  box-shadow: 7px 4px 12px 3px rgba(0, 0, 0, 0.2);
+}
+.workHour p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Kadwa", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1em;
+  margin-bottom: 10.813em;
+
+}
+.contact {
+  background-color: #c3b3a4;
+  margin-top: 2em;
+}
+.contactHeader {
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+  font-size: 1.563rem;
+  padding: 2.5em 1em 2.5em 1em;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1em;
+}
+.footer img {
+  width: 90px;
+  height: 80px;
+  padding-bottom: 2em;
+}
+.phoneandmail {
+  display: flex;
+  justify-content: space-between;
+}
+.contactP {
+  font-size: 0.938em;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+}
+.copywrite {
+  background-color: #050a12;
+  padding: 0.4em 0;
+}
+.copywrite p {
+  font-size: 0.938em;
+  font-weight: 300;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+  color: #fef7ec;
+}
