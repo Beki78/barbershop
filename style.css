@@ -17,18 +17,20 @@ body {
   position: fixed;
   width: 100%;
 }
-.navbar ul li a{
+.navbar ul li a {
   text-decoration: none;
   color: #fef7ec;
   font-size: 1.688em;
-   font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-
 }
-.navbar ul li{
+.navbar ul li {
   list-style: none;
+}
+.lg{
+  display: none;
 }
 .sideBar{
   position: fixed;
@@ -45,12 +47,11 @@ body {
   gap: 4em;
 
 }
-.close{
+.close {
   position: fixed;
-  top: .5em;
-  left: .5em;
+  top: 0.5em;
+  left: 0.5em;
   font-size: 3.5em;
-  
 }
 .navbar img {
   width: 10.313em;
@@ -110,16 +111,14 @@ body {
   font-size: 1.563rem;
   padding: 2.5em 1em 2.5em 1em;
 }
-.about img{
+.about img {
   width: 398px; /* Set the width */
   height: 381px; /* Set the height */
   object-fit: cover; /* Maintain aspect ratio */
   margin: 0 auto; /* Center the image */
   display: block; /* Ensure block-level display */
   max-width: 100%; /* Make the image responsive */
-
 }
-
 
 .aboutMore {
   font-family: "Amiko", sans-serif;
@@ -145,12 +144,17 @@ body {
 }
 
 .gallaryImages img {
-   width: 398px; /* Set the width */
-  height: 227px; /* Set the height */
+  width: 398px; /* Set the width */
   object-fit: cover; /* Maintain aspect ratio */
   margin: 0 auto 1.4em auto; /* Center the image */
   display: block; /* Ensure block-level display */
   max-width: 100%; /* Make the image responsive */
+}
+.img1{
+  height: 100vh;
+}
+.galleryP {
+  display: inline;
 }
 .services {
   background-color: #ac8957;
@@ -210,7 +214,6 @@ body {
   font-style: normal;
   font-size: 1em;
   margin-bottom: 10.813em;
-
 }
 .contact {
   background-color: #c3b3a4;
