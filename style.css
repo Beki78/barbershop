@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
@@ -145,14 +148,13 @@ body {
 
 .gallaryImages img {
   width: 398px; /* Set the width */
+  height: 14.313em;
   object-fit: cover; /* Maintain aspect ratio */
   margin: 0 auto 1.4em auto; /* Center the image */
   display: block; /* Ensure block-level display */
   max-width: 100%; /* Make the image responsive */
 }
-.img1{
-  height: 100vh;
-}
+
 .galleryP {
   display: inline;
 }

@@ -18,19 +18,21 @@
     font-size: 0.8rem;
     gap: 3em;
     margin-right: 4em;
+    transition: color 0.3s ease;
+  }
+  .navbar ul li a:hover {
+    color: #ac8957;
   }
   .navbar img {
     margin-left: 6.25em;
   }
-  .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-  }
+  
   .aboutHeader {
     order: 0;
     padding: 0;
     align-items: end;
+    grid-area: 1/1/2/2;
+    display: inline-flex;
   }
   .aboutMore {
     order: 2;
@@ -74,7 +76,26 @@
   .right {
     order: 1;
   }
-  .lg{
+  .lg {
     display: flex;
+  }
+  .footerContainer {
+    display: flex;
+  }
+  .footer {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+  }
+  .footerImg {
+    margin: 0 auto;
+  }
+  iframe {
+    padding: 3em;
+  }
+  .contactPhone,
+  .contactEmail,
+  .contactLocation {
+    text-align: center;
   }
 }
